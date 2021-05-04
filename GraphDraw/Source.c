@@ -36,7 +36,7 @@ int main(void) {
 
 	goodInput = 0;
 
-	printf("\nLine equation is y = mx + c ...\n");
+	printf("\nLine equation is y = mx+c ...\n");
 
 	do {
 		printf("Enter equation m: ");
@@ -62,7 +62,7 @@ void drawLineGraph(struct Line line, int xBorder, int yBorder) {
 	const char HORIZONTAL_CHAR = 196;
 	const char LINE_CHAR = 219;
 
-	printf("Graph of function: y=%.1fx+%.1f\n\n", line.m, line.c);
+	printf("\n\n *** Graph of function: y = %.1fx%+ .1f *** \n\n", line.m, line.c);
 
 	printf("\t");
 	for (int x = (xBorder * -1) + 1; x < 0; x++) printf(" ");
