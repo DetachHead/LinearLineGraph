@@ -95,6 +95,8 @@ void drawLineGraph(struct Line line, int xBorder, int yBorder) {
 	printf("\n\t");
 	for (int x = (xBorder * -1) + 1; x < 0; x++) printf(" ");
 	printf("%2d", yBorder * -1);
+
+	return;
 }
 
 float getXUsingY(struct Line line, int y) {
