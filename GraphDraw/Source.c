@@ -1,16 +1,16 @@
 ﻿#include <stdio.h>
 #include <math.h>
 
-void drawLineGraph(struct Line, int, int);
-float getXUsingY(struct Line, int);
-float getYUsingX(struct Line, int);
-
 struct Line {
 	// y = mx + c
 
 	float m;
 	float c;
 };
+
+void drawLineGraph(struct Line, int, int);
+float getXUsingY(struct Line, int);
+float getYUsingX(struct Line, int);
 
 int main(void) {
 	struct Line line;
