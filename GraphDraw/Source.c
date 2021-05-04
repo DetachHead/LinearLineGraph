@@ -58,9 +58,9 @@ int main(void) {
 }
 
 void drawLineGraph(struct Line line, int xBorder, int yBorder) {
-	char vpipe = 179;
-	char hpipe = 196;
-	char lineDot = 219;
+	const char VERTICAL_CHAR = 179;
+	const char HORIZONTAL_CHAR = 196;
+	const char LINE_CHAR = 219;
 
 	printf("Graph of function: y=%.1fx+%.1f\n\n", line.m, line.c);
 
@@ -78,13 +78,13 @@ void drawLineGraph(struct Line line, int xBorder, int yBorder) {
 			}
 
 			// Draw part of the line?
-			if (x == lineX) printf("%c", lineDot);
-			else if (y == lineY) printf("%c", lineDot);
+			if (x == lineX) printf("%c", LINE_CHAR);
+			else if (y == lineY) printf("%c", LINE_CHAR);
 
 			// ... or draw a border or blank space?
 			else if (x == 0 && y == 0) printf("0");
-			else if (x == 0) printf("%c", vpipe);
-			else if (y == 0) printf("%c", hpipe);
+			else if (x == 0) printf("%c", VERTICAL_CHAR);
+			else if (y == 0) printf("%c", HORIZONTAL_CHAR);
 			else printf(" ");
 
 			// Print x number?
